@@ -9,6 +9,7 @@
                         <a class="text-muted">{{products[n].Category}}</a>
                         <p>{{products[n].Description}}</p>
                         <h3>{{products[n].Price | currency:'GBP':true:'1.2-2'}}</h3>
+                        <button class="btn btn-success" (click)="addToBasket(n)">Add to basket</button>
                     </div>
                 </div>
             </div>

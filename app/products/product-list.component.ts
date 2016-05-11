@@ -30,4 +30,8 @@ export class ProductListComponent implements OnInit{
                 error => this.errorMessage = <any>error
             );
     }
+    
+    addToBasket(i: number){
+        console.log("Added " + this.products[i].Name + "to basket");
+    }
 }

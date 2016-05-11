@@ -39,6 +39,9 @@ System.register(['angular2/core', './product.service', 'angular2/router'], funct
                     this._productService.getProductRange(6, 12)
                         .subscribe(function (products) { return _this.products = products; }, function (error) { return _this.errorMessage = error; });
                 };
+                ProductListComponent.prototype.addToBasket = function (i) {
+                    console.log("Added " + this.products[i].Name + "to basket");
+                };
                 ProductListComponent = __decorate([
                     core_1.Component({
                         selector: 'qmg-products',
